@@ -130,6 +130,7 @@ h2 {
     order: -1;
     margin-bottom: ; /* Kein Abstand unter der Suchleiste */
     margin-left: 5.7cm;
+    align-self: flex-end;
   }
 
   h2 {
