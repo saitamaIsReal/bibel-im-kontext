@@ -72,6 +72,16 @@ h2 {
   gap: 10px;
 }
 
+@media (min-width: 769px) {
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 3rem;
+  }
+}
+
 .header-container h2 {
   margin: 0;
   font-size: 1.5em;
@@ -87,4 +97,61 @@ h2 {
   padding: 4px;
   font-size: 0.9em;
   width: 150px;
+}
+.search-container img {
+  width: 16px;
+  height: 16px;
+}
+
+.logo-image {
+  display: block;
+  margin: 0 auto; /* Zentriert das Bild */
+  width: 200px; /* Anpassbare Bildbreite */
+  height: auto;
+  margin-bottom: 1rem; /* Abstand zum h1-Titel */
+}
+/* Für die mobile Ansicht */
+@media (max-width: 768px) {
+  .search-container img {
+    width: 9px !important;
+    height: 9px !important;
+  }
+
+  h1 {
+    font-size: 1.3rem; /* Verkleinerte Größe für mobile Ansicht */
+  }
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-container {
+    margin-top: 0.5rem !important;
+    order: -1;
+    margin-bottom: ; /* Kein Abstand unter der Suchleiste */
+    margin-left: 5.7cm;
+  }
+
+  h2 {
+    font-size: 1.22rem !important;
+    text-align: left;
+    width: 100%;
+    margin-top: 0; /* Kein Abstand über h2 */
+    white-space: nowrap;
+  }
+
+  /* Reduziert Schriftgröße und Innenabstände nur in mobiler Ansicht */
+  .search-container input[type="text"] {
+    padding: 2px; /* Weniger Innenabstand */
+    font-size: 0.65em; /* Kleinere Schriftgröße */
+    width: 5rem; /* Erlaubt dynamische Breite */
+    max-width: 120px; /* Begrenzte Breite in mobiler Ansicht */
+  }
+  .logo-image {
+    display: block;
+    margin: 0 auto; /* Zentriert das Bild */
+    width: 100px; /* Anpassbare Bildbreite */
+    height: auto;
+    margin-bottom: 1rem; /* Abstand zum h1-Titel */
+  }
 }
